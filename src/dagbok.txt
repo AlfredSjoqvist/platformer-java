@@ -1,0 +1,52 @@
+
+03/28
+- Skapade grundläggande framework för fönster och sånt
+- Skapade menu screen med knappar
+- Skapade så tiles kan displayas
+- Skapade så maps med tiles kan laddas in
+
+04/03
+- Fixade ny karaktär
+- Fixade run
+
+04/04
+- Fixade crouch
+- Fixade roll
+- Fixade run attack
+
+04/13
+- Fixade så man kan ladda in flera layers av tiles
+- Gjorde en prototyp till level 1
+
+04/14
+- fixade buggad offset på stora sprites
+- fixade så stora sprites renderas
+
+asdasd
+
+Att göra:
+- fixa så att fönstrets dimensioner inte är hårdkodade
+- fixa så bildernas filepaths inte är hårdkodade
+- fixa så crouch animationen inte har en ful transition tillbaka till idle
+- implementera climbing
+- implementera long fall animation
+- fixa dåliga collision boxes (kan göras genom att croppa sprite sheets)
+- fixa enemy collisions
+
+Kodinspektion:
+- fixa så player fieldet i HUD används för att ta bort kodinspektion varning
+- diskutera manyfields i MapObject med labbass
+- fixa alla // kommentarer
+- använd mapobject.intersects för att ta reda på om man har tagit damage av en fiende
+- Fixa enum states i Player och Yellow så att de är en separat enum klass
+- Byt ut ArrayLists mot Lists eller något
+- Använd state fieldsen i Yellow
+- Fråga om man kan assigna värden med setters
+- Fråga om magic number arrays angående frames och sånt i creature klasser
+- Fixa hardcoded file separators i bla level1state
+- try-with-resources i level1states rad 60 typ (?????)
+- fråga om catch-and-forget vid (IOException e)
+
+Kodinspektion 2:
+- Varför får jag catch and forget på alla IOExceptions som laddar in bilder?
+- try with funkar inte
